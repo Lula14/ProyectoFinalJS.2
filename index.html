@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PETSHOP ONLINE</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    
+    
+</head>
+
+<body class="body">
+
+    <header>
+        <h1 class="center separador">PETSHOP TIJUANA</h1>
+    </header>
+    <div id="listado"></div>
+    <div class="div-cotizador">
+        <h2 class="center separador">Completa los datos solicitados</h2>
+        <label for="productos">Selecciona el tipo de producto</label>
+        <select id="productos">
+            <option selected disabled>...</option>
+            <option value="">Elija un producto</option>
+        </select>
+        <label for="kilos">Selecciona sus kilos</label>
+        <select id="kilos">
+            <option selected disabled>...</option>
+            <option value="">KG</option>
+        </select>
+        <label for="cantidad">Ingresa la cantidad</label>
+        <input type="number" id="cantidad" value="1" min="1" max="15">
+        <div class="center separador">
+            <button id="botonCalcular" class="button button-outline">Calcular</button>
+        </div>
+        <div class="center separador">
+            <p class="total">Precio estimado: $ <span>0.00</span></p>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+   
+</body>
+<script src="/js/class.cotizador.js"></script>
+    <script src="/js/variables.js"></script>
+    <script  src="/js/appss.js"></script>
+    <!-- <script  src="/3erPreEntrega/"></script> -->
+    <script src="/js/fetch.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</html>
